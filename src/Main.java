@@ -6,6 +6,9 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             String info;
             info = scanner.nextLine();
+            if(scanner.equals("exit")){
+                return;
+            }
             Player player = new Player(info);
         }
     }
