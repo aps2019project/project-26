@@ -1,9 +1,12 @@
-public class Main {
-    public static void main(String[] args){
-        System.out.println("Hello everybody");
-        int x;
-         x = 5;
-         System.out.println(x + 1);
+import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        while (true) {
+            Scanner scanner = new Scanner(System.in);
+            String info;
+            info = scanner.nextLine();
+            Player player = new Player(info);
+        }
     }
 }

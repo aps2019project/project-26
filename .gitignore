@@ -33,6 +33,7 @@ cmake-build-release/
 *.iws
 
 # IntelliJ
+
 out/
 .idea/misc.xml
 .idea/modules.xml
