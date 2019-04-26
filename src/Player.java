@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Player {
@@ -29,21 +30,26 @@ public class Player {
                 return;
             }
         }
-        if (check[0].equals("login")) {
+        else if (check[0].equals("login")) {
             if (check.length == 2) {
                 Account account = new Account();
                 account.login(check[1]);
-                return;
             } else {
                 System.out.println("No username was entered");
                 return;
             }
         }
+        else{
+            System.out.println("You should login or create an account first");
+        }
     }
 
-    public void settingPassword(String username, String password) {
-        this.username = username;
-        this.password = password;
+    public void settingPassword(Player player, String username, String password) {
+        player.username = username;
+        player.password = password;
+    }
+    public void sortingPlayers(ArrayList Player){
+
     }
 }
 
